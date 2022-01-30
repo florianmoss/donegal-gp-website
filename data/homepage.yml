@@ -1,0 +1,80 @@
+########################## Banner #############################
+banner:
+  enable : true
+  title : "Climate. Housing. Transport. Healthcare. Education."
+  image : "images/about/logo-green.png"
+  content : "Some text that can be here."
+
+######################## Book Preview ##########################
+mica:
+  enable : true
+  pagePreview:
+    # page preview loop
+    - image : "images/about/redress.jpeg"
+
+  title : "Donegal Greens support the 100% Mica redress scheme"
+  content : "Some text."
+
+  inside:
+    # book inside item loop
+    - insideItem : "Reason 1"
+    - insideItem : "Reason 2"
+    - insideItem : "Reason 3"
+    - insideItem : "Reason 4"
+
+######################### Chapters ##########################
+program:
+  enable : true
+  title : "What we stand for"
+  subtitle : "Some text."
+  chapter:
+    # chapter preview loop
+    - title : "Chapter 1"
+      content : "Lorem ipsum"
+
+    # chapter preview loop
+    - title : "Chapter 2"
+      content : "Lorem ipsum"
+      
+    # chapter preview loop
+    - title : "Chapter 3"
+      content : "Lorem ipsum"
+
+    # chapter preview loop
+    - title : "Chapter 4"
+      content : "Lorem ipsum"
+
+    # chapter preview loop
+    - title : "Chapter 5"
+      content : "Lorem ipsum"
+
+    # chapter preview loop
+    - title : "Chapter 6"
+      content : "Lorem ipsum"
+
+######################################## author #############################
+candidates:
+  enable : true
+  image : "images/about/michael-white.jpeg"
+  name : "Michael White"
+  designation : "Green Party Candidate"
+  content : "Description, text, bla."
+
+################################ Blog ###################################
+blog:
+  enable : false
+  title : "Our insights and articles"
+  subtitle : "Laboriosam eos aperiam excepturi accusamus velit repudiandae sit rem incidunt, similique facere quas blanditiis."
+  # blog post comes from 'content/blog'
+
+################################# Contact ##############################
+contact:
+  enable : true
+  title : "Contact Us"
+  subtitle : "Whether you have questions or you would just like to say hello, contact us.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, atque!"
+  contactItem:        
+    # contact Item loop
+    - title : "Email"
+      icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
+      list:
+        - listItem : "donegal@greens.ie"

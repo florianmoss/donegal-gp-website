@@ -1,0 +1,148 @@
+{{ define "main" }}
+
+<!-- Banner -->
+{{ if .Site.Data.homepage.banner.enable }}
+{{ with .Site.Data.homepage.banner }}
+<section class="banner-main py-7" id="banner">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-7 col-md-8">
+        <div class="main-banner">
+          <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
+          <p class="mb-4">{{ .content | markdownify }}</p>
+          <a href="/#program" class="btn btn-main">Learn More</a>
+        </div>
+      </div>
+
+      {{ if .image }}
+      <div class="col-lg-5 d-none d-lg-block">
+        <div class="banner-img resize">
+          <img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100">
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Book preview -->
+{{ if .Site.Data.homepage.mica.enable }}
+{{ with .Site.Data.homepage.mica }}
+<section class="" id="mica">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="book-preview">
+          <img src="{{`images/about/redress.jpeg` | relURL}}" class="background-device img-fluid" alt="device">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="section-heading book-info mt-5 mt-lg-0">
+          <h2 class="text-lg mb-4">{{ .title | markdownify }}</h2>
+          {{ .content | markdownify }}
+
+          <ul class="list-unstyled mt-4 mb-5">
+            {{ range .inside }}
+            <li><i class="ti-check mr-3"></i> {{ .insideItem | markdownify }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Chapter -->
+{{ if .Site.Data.homepage.program.enable }}
+{{ with .Site.Data.homepage.program }}
+<section class="pt-5 chapter" id="program">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="section-heading">
+          <h2 class="text-lg">{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      {{ range .chapter }}
+      <div class="col-sm-6">
+        <div class="chapter-item">
+          <h4>{{ .title | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- About Author -->
+{{ if .Site.Data.homepage.candidates.enable }}
+{{ with .Site.Data.homepage.candidates }}
+<section class="about section" id="candidates">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <div class="about-img">
+          <img src="{{ .image | relURL }}" alt="{{ .name }}" class="img-fluid w-100">
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="author-info pl-4 mt-5 mt-lg-0">
+          <h2 class="text-lg">{{ .name }}</h2>
+          <p class="mb-4 lead">- {{ .designation }}</p>
+          {{ .content | markdownify }}
+
+          {{ if .signature }}
+          <img src="{{ .signature | relURL }}" alt="" class="img-fluid">
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Contact -->
+{{ if .Site.Data.homepage.contact.enable }}
+{{ with .Site.Data.homepage.contact }}
+<section class="section-top contact bg-grey" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-8">
+        <div class="section-heading text-center">
+          <h2 class="mb-2 text-lg">{{ .title | markdownify }}</h2>
+          <p>{{ .subtitle | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      {{ range .contactItem }}
+      <div class="col-lg-4 col-sm-6">
+        <div class="contact-info-block text-center mb-4">
+          <i class="{{ .icon }}"></i>
+          <p class="mb-0">{{ .title | markdownify }}</p>
+          {{ range .list }}
+          <h5>{{ .listItem }}</h5>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}
