@@ -134,7 +134,7 @@
           <i class="{{ .icon }}"></i>
           <p class="mb-0">{{ .title | markdownify }}</p>
           {{ range .list }}
-          <h5><a href="mailto:michael.white@greenparty.ie">donegal@greenparty.ie</a></h5>
+          <h5><a href="{{ .listItemAction }}">{{ .listItem }}</a></h5>
           {{ end }}
         </div>
       </div>

@@ -64,8 +64,20 @@ contact:
   title : "Contact Us"
   subtitle : "We understand that there are loads of questions that you might have. Please feel free reaching out to us directly!"
   contactItem:        
-    # contact Item loop
     - title : "Email"
       icon : "ti-email" 
       list:
-        - listItem : "michael.white@greenparty.ie"
+        - listItem : "donegal@greenparty.ie"
+          listItemAction : "mailto:michael.white@greenparty.ie"
+
+    - title : "Twitter"
+      icon : "ti-twitter" 
+      list:
+        - listItem : "#mwhitedonegal"
+          listItemAction : "https://twitter.com/mwhitedonegal"
+
+    - title : "Facebook"
+      icon : "ti-facebook" 
+      list:
+        - listItem : "Green Party Donegal"
+          listItemAction : "https://www.facebook.com/greenpartydonegal/posts"
