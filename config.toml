@@ -63,7 +63,7 @@ description = "Green Party Donegal"
 author = "Florian Moss"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
-copyright = "Copyright &copy; 2022 Florian Moss.  All Rights Reserved."
+copyright = "Green Party Donegal &copy; 2022 All Rights Reserved."
 
 # Preloader
 [params.preloader]
@@ -88,7 +88,7 @@ content = "Some text"
 [[params.share]]
 title = "facebook"
 icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "#ff"
 
 [[params.share]]
 title = "twitter"

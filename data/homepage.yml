@@ -1,64 +1,55 @@
 ########################## Banner #############################
 banner:
   enable : true
-  title : "Climate. Housing. Transport. Healthcare. Education."
+  title : "Climate. Housing. Transport. Healthcare."
   image : "images/about/logo-green.png"
-  content : "Some text that can be here."
+  content : ""
 
 ######################## Book Preview ##########################
 mica:
   enable : true
   pagePreview:
-    # page preview loop
-    - image : "images/about/redress.jpeg"
+    - image : "images/about/redress.png"
 
   title : "Donegal Greens support the 100% Mica redress scheme"
-  content : "Some text."
+  content : ""
 
   inside:
-    # book inside item loop
-    - insideItem : "Reason 1"
-    - insideItem : "Reason 2"
-    - insideItem : "Reason 3"
-    - insideItem : "Reason 4"
+    - insideItem : "100% redress for homeowners"
+    - insideItem : "Rebuild houses to energetic standards"
+    - insideItem : "Cover additional costs during rebuilding"
 
-######################### Chapters ##########################
+######################### Program ##########################
 program:
   enable : true
   title : "What we stand for"
-  subtitle : "Some text."
+  subtitle : "Our goal is to deliver a just transition, which protects our natural world and brings a fairer economic model for everyone."
   chapter:
-    # chapter preview loop
-    - title : "Chapter 1"
-      content : "Lorem ipsum"
+    - title : "Housing"
+      content : "We believe that adequate and affordable housing is a social right. We want to build affordable homes that are properly insulated and sustainably heated."
 
-    # chapter preview loop
-    - title : "Chapter 2"
-      content : "Lorem ipsum"
+    - title : "Climate Action"
+      content : "We want to make deep retrofitting for private and commercial buildings in Donegal more affordable. We want to transition to fossil fuels to 100% renewable energy sources."
       
-    # chapter preview loop
-    - title : "Chapter 3"
-      content : "Lorem ipsum"
+    - title : "Economic & Employment"
+      content : "We want reliable and affordable brodband access for all people in Donegal. We want less burocracy and more funding for start-ups and SMEs."
 
-    # chapter preview loop
-    - title : "Chapter 4"
-      content : "Lorem ipsum"
+    - title : "Health"
+      content : "We want more funding for Letterkenny University Hospital. We want rural Donegal to be covered by a wider network of GP's."
 
-    # chapter preview loop
-    - title : "Chapter 5"
-      content : "Lorem ipsum"
+    - title : "Agriculture"
+      content : "We want Donegal farmers to have a secure future. We want to maintain and expand our diversity, reduce monoculture and expand organic farming."
 
-    # chapter preview loop
-    - title : "Chapter 6"
-      content : "Lorem ipsum"
+    - title : "Transport"
+      content : "We want access to a railway that connect Donegal with Derry. We want to expand public transportation and reduce traffic congestion in towns."
 
 ######################################## author #############################
 candidates:
   enable : true
   image : "images/about/michael-white.jpeg"
   name : "Michael White"
-  designation : "Green Party Candidate"
-  content : "Description, text, bla."
+  designation : "Green Party Candidate Donegal"
+  content : "The Green Party will be focusing on the climate crisis, but healthcare, transport and education are big issues for most of us in Donegal. I am supporting the 100% Mica redress scheme and want to secure a major investment in public transport for Donegal."
 
 ################################ Blog ###################################
 blog:
@@ -71,10 +62,10 @@ blog:
 contact:
   enable : true
   title : "Contact Us"
-  subtitle : "Whether you have questions or you would just like to say hello, contact us.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, atque!"
+  subtitle : "We understand that there are loads of questions that you might have. Please feel free reaching out to us directly!"
   contactItem:        
     # contact Item loop
     - title : "Email"
-      icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
+      icon : "ti-email" 
       list:
-        - listItem : "donegal@greens.ie"
+        - listItem : "michael.white@greenparty.ie"
